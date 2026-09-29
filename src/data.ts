@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'حسین رضایی',
+  name: 'حسین ',
   email: 'hello@example.com',
   location: 'تهران، ایران',
   // Replace the sample identity, email, résumé and projects before publishing.

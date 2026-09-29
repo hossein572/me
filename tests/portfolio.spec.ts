@@ -140,18 +140,18 @@ test('resume opens a local, printable page', async ({ page, context }) => {
   const resume = await popup
   await resume.waitForLoadState()
   await expect(resume).toHaveURL(/\/resume.html$/)
-  await expect(resume.getByRole('heading', { level: 1 })).toHaveText('حسین رضایی')
+  await expect(resume.getByRole('heading', { level: 1 })).toHaveText('حسین ')
   await expect(resume.getByRole('button', { name: 'چاپ / ذخیره به‌صورت PDF' })).toBeVisible()
   await expect(resume.locator('.notice')).toContainText('این رزومه نمونه است')
 })
 
 test('the site is branded as حسین everywhere and never as آرمان', async ({ page }) => {
   await page.goto('/')
-  await expect(page).toHaveTitle('حسین رضایی | توسعه‌دهنده و طراح رابط کاربری')
+  await expect(page).toHaveTitle('حسین  | توسعه‌دهنده و طراح رابط کاربری')
   const header = page.locator('.site-header .brand-text')
   await expect(header).toContainText('حسین')
-  await expect(page.locator('.hero-description')).toContainText('حسین رضایی')
-  await expect(page.locator('.footer-bottom')).toContainText('© ۱۴۰۵ حسین رضایی')
+  await expect(page.locator('.hero-description')).toContainText('حسین ')
+  await expect(page.locator('.footer-bottom')).toContainText('© ۱۴۰۵ حسین ')
   await expect(page.locator('.footer-brand .brand-text')).toContainText('حسین')
   await expect
     .poll(() =>

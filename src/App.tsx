@@ -439,7 +439,7 @@ export default function App() {
                 مدرن<span className="heading-dot">.</span>
               </h1>
               <p className="hero-description">
-                سلام، من <strong>حسین رضایی</strong> هستم؛ توسعه‌دهنده و طراح.
+                سلام، من <strong>حسین </strong> هستم؛ توسعه‌دهنده و طراح.
                 <br className="desktop-break" /> ایده‌ها را به تجربه‌هایی زیبا، سریع و کاربردی تبدیل
                 می‌کنم.
                 <br className="desktop-break" /> با دقت در جزئیات، برای آدم‌ها؛ نه فقط
@@ -860,7 +860,7 @@ export default function App() {
           </a>
         </div>
         <div className="container footer-bottom">
-          <span>© ۱۴۰۵ حسین رضایی · پورتفولیوی نمونه</span>
+          <span>© ۱۴۰۵ حسین  · پورتفولیوی نمونه</span>
           <span>
             کمتر، اما بهتر.
             <span className="footer-blue-dot" />
